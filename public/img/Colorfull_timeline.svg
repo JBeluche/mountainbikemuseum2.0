@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="3064" viewBox="0 0 72 3064">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #eee;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #147ed9;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-5 {
+        fill: #f72680;
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-7 {
+        fill: #7f1399;
+      }
+
+      .cls-8 {
+        fill: #009f69;
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-10 {
+        fill: #fc7701;
+      }
+
+      .cls-11 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-12 {
+        fill: #f8b002;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#009f69"/>
+      <stop offset="1" stop-color="#147ed9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f72680"/>
+      <stop offset="1" stop-color="#147ed9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f72680"/>
+      <stop offset="1" stop-color="#7f1399"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#009f69"/>
+      <stop offset="1" stop-color="#fc7701"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8b002"/>
+      <stop offset="1" stop-color="#fc7701"/>
+    </linearGradient>
+  </defs>
+  <g id="Colorfull_timeline" transform="translate(12931.501 1998)">
+    <line id="Line_326" data-name="Line 326" class="cls-1" y2="2966" transform="translate(-12895.001 -1935.5)"/>
+    <rect id="Rectangle_2075" data-name="Rectangle 2075" class="cls-2" width="30" height="230" transform="translate(-12910 -581)"/>
+    <rect id="Rectangle_2074" data-name="Rectangle 2074" class="cls-3" width="30" height="230" transform="translate(-12910 -317)"/>
+    <rect id="Rectangle_2073" data-name="Rectangle 2073" class="cls-4" width="30" height="230" transform="translate(-12910 -46)"/>
+    <rect id="Rectangle_2072" data-name="Rectangle 2072" class="cls-5" width="30" height="230" transform="translate(-12910 239)"/>
+    <rect id="Rectangle_2071" data-name="Rectangle 2071" class="cls-6" width="30" height="230" transform="translate(-12910 511)"/>
+    <rect id="Rectangle_2070" data-name="Rectangle 2070" class="cls-7" width="30" height="230" transform="translate(-12910 778)"/>
+    <rect id="Rectangle_2076" data-name="Rectangle 2076" class="cls-8" width="30" height="230" transform="translate(-12910 -846)"/>
+    <rect id="Rectangle_2077" data-name="Rectangle 2077" class="cls-9" width="30" height="230" transform="translate(-12910 -1134)"/>
+    <rect id="Rectangle_2078" data-name="Rectangle 2078" class="cls-10" width="30" height="230" transform="translate(-12910 -1396)"/>
+    <rect id="Rectangle_2079" data-name="Rectangle 2079" class="cls-11" width="30" height="230" transform="translate(-12910 -1668)"/>
+    <rect id="Rectangle_2080" data-name="Rectangle 2080" class="cls-12" width="30" height="230" transform="translate(-12910 -1943)"/>
+    <g id="Group_5166" data-name="Group 5166" transform="translate(-13804.501 -4979)">
+      <circle id="Ellipse_81" data-name="Ellipse 81" class="cls-12" cx="36" cy="36" r="36" transform="translate(873 2981)"/>
+    </g>
+    <g id="Group_5165" data-name="Group 5165" transform="translate(-13804.501 -4707)">
+      <circle id="Ellipse_81-2" data-name="Ellipse 81" class="cls-12" cx="36" cy="36" r="36" transform="translate(873 2981)"/>
+    </g>
+    <circle id="Ellipse_91" data-name="Ellipse 91" class="cls-10" cx="36" cy="36" r="36" transform="translate(-12931.501 -1454)"/>
+    <circle id="Ellipse_90" data-name="Ellipse 90" class="cls-10" cx="36" cy="36" r="36" transform="translate(-12931.501 -1182)"/>
+    <circle id="Ellipse_89" data-name="Ellipse 89" class="cls-8" cx="36" cy="36" r="36" transform="translate(-12931.501 -910)"/>
+    <circle id="Ellipse_88" data-name="Ellipse 88" class="cls-8" cx="36" cy="36" r="36" transform="translate(-12931.501 -638)"/>
+    <circle id="Ellipse_87" data-name="Ellipse 87" class="cls-3" cx="36" cy="36" r="36" transform="translate(-12931.501 -366)"/>
+    <circle id="Ellipse_86" data-name="Ellipse 86" class="cls-3" cx="36" cy="36" r="36" transform="translate(-12931.501 -94)"/>
+    <circle id="Ellipse_85" data-name="Ellipse 85" class="cls-5" cx="36" cy="36" r="36" transform="translate(-12931.501 178)"/>
+    <circle id="Ellipse_84" data-name="Ellipse 84" class="cls-5" cx="36" cy="36" r="36" transform="translate(-12931.501 450)"/>
+    <circle id="Ellipse_83" data-name="Ellipse 83" class="cls-7" cx="36" cy="36" r="36" transform="translate(-12931.501 722)"/>
+    <circle id="Ellipse_82" data-name="Ellipse 82" class="cls-7" cx="36" cy="36" r="36" transform="translate(-12931.501 994)"/>
+  </g>
+</svg>
