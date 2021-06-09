@@ -9,11 +9,9 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
-<body>
+<body class="bg-blue-100">
     
     @yield('main_content')
-
-
 
 </body>
 </html>

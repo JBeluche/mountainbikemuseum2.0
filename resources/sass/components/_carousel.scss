@@ -1,0 +1,156 @@
+.carousel{
+    width: 100%;
+    height: 200rem;
+    background-color: $house-dark;
+    padding: 20rem 0;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-column-gap: 2rem;
+    position: relative;
+
+    &__bottom-illustration{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+
+    &__content-wrapper{
+        grid-column: 2 / 3;
+        grid-row-start: 1;
+    }
+
+    &__dot-effect{
+        &--left{
+            grid-column: 1 / 2;
+            grid-row-start: 1;
+            align-self: center;
+            width: 100%;
+        }
+        &--right{
+            grid-column: 3 / 4;
+            grid-row-start: 1;
+            justify-self: end;
+            align-self: center;
+            width: 100%;
+        }
+    }
+
+
+/*Carousel functionality*/
+.carousel__window{
+    position: relative;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-self: center;
+    width: 60%;
+
+}
+
+&__window .slide:target {
+	z-index: 100;
+}
+
+a.prev,a.next {
+	padding: 1rem;
+    display: block;
+	cursor:pointer;
+}
+.prev {
+	background-color: $main-pink;
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    
+    justify-self: start;
+    align-self: end;
+    transform: rotate(180deg);
+    
+    //A misterious space under this element was showing
+    margin-bottom: -1px;
+}
+.next {
+	background-color: $main-pink;
+    grid-row: 1 / -1;
+    grid-column: 3 / 4;
+    justify-self: end;
+    align-self: end;
+}
+.slide {
+	position:absolute;
+	height:100%;
+    width:100%;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+    &-image{
+        grid-row: 1 / -1;
+        grid-column: 1 / -1;
+        margin-top: 10rem;
+        width: 100%;
+    }
+}
+
+}
+@media only screen and (max-width: $bp-large){
+    .carousel{
+        grid-template-columns: 100%;
+        padding: 0;
+        
+        &__dot-effect{
+            &--left{
+                display: none;
+            }
+            &--right{
+                display: none;
+            }
+        }
+
+        &__content-wrapper{
+            grid-column: 1 / 2;
+            padding: 10rem;
+            padding-top: 20rem;
+            padding-bottom: 0;
+        }
+        .carousel__window{
+            grid-column: 1 / 2;
+            width: 100%;
+        }
+    } 
+
+}
+
+
+@media only screen and (max-width: $bp-medium){
+    .carousel{
+
+        height: 165rem;
+        &__content-wrapper{
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: $bp-small){
+    .carousel{
+        height: 190rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*TESTING*/

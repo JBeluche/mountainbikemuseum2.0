@@ -1,0 +1,550 @@
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('/fonts/opensans/OpenSans-Bold.woff2') format('woff2'),
+        url('/fonts/opensans/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/opensans/OpenSans-BoldItalic.woff2') format('woff2'),
+        url('/fonts/opensans/OpenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/opensans/OpenSans-LightItalic.woff2') format('woff2'),
+        url('/fonts/opensans/OpenSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/opensans/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('/fonts/opensans/OpenSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/opensans/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('/fonts/opensans/OpenSans-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/opensans/OpenSans-SemiBold.woff2') format('woff2'),
+        url('/fonts/opensans/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/opensans/OpenSans-Italic.woff2') format('woff2'),
+        url('/fonts/opensans/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/opensans/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+        url('/fonts/opensans/OpenSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/opensans/OpenSans-Light.woff2') format('woff2'),
+        url('/fonts/opensans/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('/fonts/opensans/OpenSans-Bold.woff2') format('woff2'),
+        url('/fonts/opensans/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+/* font converted using font-converter.net. thank you! */
+@font-face {
+    font-family: "Bauhaus93";
+    src: url("/fonts/Bauhaus93/fonts/bauhs93.eot"); /* IE9 Compat Modes */
+    src: url("/fonts/Bauhaus93/fonts/bauhs93.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("/fonts/Bauhaus93/fonts/bauhs93.otf") format("opentype"), /* Open Type Font */
+      url("/fonts/Bauhaus93/fonts/bauhs93.svg") format("svg"), /* Legacy iOS */
+      url("/fonts/Bauhaus93/fonts/bauhs93.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("/fonts/Bauhaus93/fonts/bauhs93.woff") format("woff"), /* Modern Browsers */
+      url("/fonts/Bauhaus93/fonts/bauhs93.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+html{
+    font-family: 'Open Sans' !important; ;
+}
+
+//Reusable Typography----------------------
+.heading-1{
+    color: $main-pink;
+    font-size: 6.2rem;
+    font-weight: bold;
+}
+
+.heading-2{
+    color: $main-pink;
+    font-size: 5.2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.heading-2-normal{
+    color: $main-pink;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.heading-3{
+    font-size: 2.2rem;
+    color: $main-pink;    
+    font-weight: 600;
+}
+
+.heading-4{
+    font-size: 2.2rem;
+    color: $house-light;    
+    font-weight: bold;
+}
+
+.heading-5{
+    font-size: 4.2rem;
+    color: $main-pink;    
+    font-family: 'Bauhaus 93';
+}
+
+.heading-cms-1{
+    font-size: 4.2rem;
+    color: $admin-grey;    
+    font-family: 'Open Sans';
+}
+
+.paragraph-semibold-16__light,
+.paragraph-semibold-16__dark
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.paragraph-regular__light,
+.paragraph-regular__dark{
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.paragraph-regular__light--small,
+.paragraph-regular__dark--small{
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.paragraph-big__light,
+.paragraph-big__dark{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.paragraph-medium__light,
+.paragraph-medium__dark{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.paragraph-small__light,
+.paragraph-small__dark{
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.paragraph-medium__light,
+.paragraph-big__light,
+.paragraph-regular__light,
+.paragraph-small__light,
+.paragraph-regular__light--small,
+.paragraph-semibold-16__light{
+    color: $house-light;
+}
+
+.paragraph-medium__dark,
+.paragraph-big__dark,
+.paragraph-small__dark,
+.paragraph-regular__dark,
+.paragraph-regular__dark--small,
+.paragraph-semibold-16__dark{
+        color: $house-dark;
+}
+
+.input-field-base{
+    color: rgba($main-pink, .5);
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+.link{
+    color: $main-pink !important;  
+    text-decoration: none;  
+}
+
+
+
+//Custom Typography------------------------
+//For the notification cards
+.c-popup{
+    & ul{
+        text-decoration: none;
+        list-style-type: none;
+    }
+}
+
+/*For the navigation*/
+.nav,
+.nav a,
+.nav button,
+.nav__item
+{
+    font-size: 1.2rem;
+    color: $house-light;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+//Firefox made me do this. Otherwise bold wont work on button...
+.nav__item--active{
+    border-bottom: solid $main-pink 2px;
+}
+
+/*For the footer*/
+.footer{
+    color: black;
+
+    &__credits{
+        color: $house-light;
+        font-size: .9rem;
+    }
+    &__social{  
+            font-weight: 600;
+            font-size: 1.8rem;
+    }
+    &__opening-hours--right{
+        font-weight: normal;
+    }
+}
+/*For the main header component*/
+.header-main__h1{
+    font-family: 'Bauhaus 93';
+    color: $house-light;
+    font-size: 6.5rem;
+    text-align: center;
+}
+
+/*For admin panel*/
+.header-main__admin{
+    color: $house-dark;
+    font-size: 6.5rem;
+    text-align: center;
+}
+
+.header-second__admin{
+    color: $house-dark;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.header-third__admin{
+    color: $house-dark;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/*For the sidebar and text component*/
+.sidebar{
+    &__title{
+        font-size: 3.2rem;
+        color: $main-pink;
+        font-weight: 800;
+    }
+
+    &__list{
+        color: $house-light;
+
+        & li {
+            list-style-type: none;
+        }
+        
+        &--item-child{
+            font-size: 1.4rem;
+            font-weight: 300;
+            font-style: italic;
+        }
+     
+    }
+
+}
+
+/*Styling for the lightblue carousel-text button*/
+.carousel-text__button{
+    color: $light-blue;
+    font-size: 1.8rem;
+    font-family: "Bauhaus 93";
+}
+
+
+/*Styling for the long card*/
+.long-card{
+    color: $house-dark;
+
+    &__title{
+        font-size: 5.6rem;
+        font-weight: normal;
+    }
+
+    & li{
+        list-style-type: none;
+        font-size: 1.6rem;
+    }
+}
+
+.login{
+    &__title{
+        font-size: 3.6rem;
+        color: $main-pink;
+    }
+    &__label{
+        font-weight: normal;
+        font-size: 1.3rem;
+        color: rgba($house-dark, .5);
+    }
+    &__button{
+        font-weight: 600;
+        font-size: 1rem;
+        color: $house-light;
+    }
+
+    &__to-register{
+
+        & a{
+            text-decoration: none;
+            color: $main-purple;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.checkout-register{
+
+    color: $house-light;   
+}
+
+//Form main
+.main-form{
+
+    font-family: arial;
+    font-weight: normal;
+    color: $house-light;
+
+    &__input {
+        color: $house-light;
+    }
+}
+
+
+textarea{
+    font-family: 'Open Sans' !important; ;
+  }
+  
+
+//Reserveren
+.fiets-reserveren{
+
+    &__mailto{
+        color: $secondary-blue;
+        font-size: 1.6rem;        
+        font-weight: 800;
+        font-style: normal;
+        text-decoration: none;
+    }
+}
+
+
+//Donation page
+.donation{
+    &__card{
+
+        &--heading-2{
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: $deep-purple;
+        }        
+        &--heading-4{
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: $deep-purple;
+            
+        }
+        &--button{
+            color: $house-light;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: .4rem;
+        }
+    }
+}
+
+//Big grey card
+.big-grey-card{
+    &__quote{
+        color:$house-light;
+        font-size: 3.5rem;
+        font-weight: 800;
+        font-style: italic;
+
+        &--small{
+            font-style: italic;
+            text-align: center;
+        }
+    } 
+
+    &__bullet-point{
+        font-size: 2.0rem;
+    }
+    &__card-container li{
+        list-style-type: none;
+    }
+}
+
+//centered text component
+.centered-text{
+
+    & p{        
+       font-size: 1.6rem;
+       font-weight: 800;
+       font-style: normal;
+    }
+
+    & a{
+        text-decoration: none;
+        font-style: italic;
+        color: $main-pink;
+    }
+
+}
+
+//Header lint
+.header-lint{
+    & a{
+        color: $main-pink;
+        text-decoration: none;
+    }
+}
+
+
+//Vriend woorden
+.vriend__section{
+    &--link{
+        color: $main-pink;
+        font-weight: bold;
+    }
+}
+
+//Arrangementen
+.next,
+.prev{
+    text-decoration: none;
+}
+
+//Geschidenis mountainbike
+.tree-illustration{
+    &__section{    
+        font-size: 1.8rem;
+        color: $house-light;
+        font-weight: 300;
+
+        & a{
+            color: $main-pink;
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+
+        & li{
+            
+            list-style-type: none;
+        }
+    }
+}
+//timelinegre
+.timeline__item-header{
+    font-size: 4.2rem;
+    font-weight: normal;
+    font-style: normal;
+
+    span{
+        font-size: 2.2rem;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: $bp-huge){
+
+}
+
+@media only screen and (max-width: $bp-large){
+    //two-halfs
+    .two-halfs__header-title{
+            font-size: 4.2rem !important;
+        }
+}
+
+
+@media only screen and (max-width: $bp-medium){
+    .big-grey-card__textfield-header{
+        font-size: 4.2rem !important;
+    }
+
+}
+
+@media only screen and (max-width: $bp-small){
+    .header-main__h1{
+        font-size: 4.5rem;
+    }
+
+    .big-grey-card__grey-area-fix{
+        padding-left:  5rem !important;
+        padding-right: 5rem !important;
+
+        }
+
+        
+    .carousel-text__title{
+        font-size: 3.2rem;
+    }
+
+    .header-lint h1{
+        font-size: 4.2rem;
+    }
+
+}
+
+

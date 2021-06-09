@@ -1,0 +1,224 @@
+
+.long-card{
+    position: relative;
+    background-color: $light;
+    width: 39rem;
+    min-height: 84rem;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+    padding: 0 5rem;
+    padding-bottom: 13rem;
+
+    &--small{
+        min-height: 65rem !important; 
+    }
+
+    &__wrapper{
+        display: grid;
+        justify-items: center;
+        padding: 20rem 0;
+        padding-top: 0;
+        z-index: 4;
+        grid-template-areas: 
+        "card-1 card-2 card-3";
+        grid-template-columns: repeat(3, 1fr);   
+        grid-row-gap: 20rem;
+        grid-auto-rows: 1fr;
+        width: 100%;
+    }
+
+    &__wrapper-2-cards{
+        grid-template-areas: unset; 
+        grid-template-columns: repeat(2, 1fr);   
+    }
+
+    &__card-1{
+        grid-area:  card-1;
+    }
+    &__card-2{
+        grid-area:  card-2;
+    }
+    &__card-3{
+        grid-area:  card-3;
+    }
+
+    
+    &__title{
+        padding-top: 3rem;
+        //This is to create space for the fold element
+        margin-bottom: 15.5rem;
+    }
+
+    &__fold{
+        width: 44.5rem;
+        height: 9.5rem;
+        position: absolute;
+        top: 12rem;
+        display: flex;
+        
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 10;
+
+        
+        &--purple{
+            background-image: url(/img/svg/card-fold-purple.svg);
+        }
+        &--pink{
+            background-image: url(/img/svg/card-fold-pink.svg);
+        }
+        &--orange{
+            background-image: url(/img/svg/card-fold-orange.svg);
+        }
+
+    }
+
+    &__price{
+        padding-top: 1.2rem;
+    }
+
+    &__form{
+        width: 100%; 
+        position: absolute;
+        bottom: 3rem;
+    }
+
+    &__hr{        
+        border:none;
+        width: 3.8rem;
+        &--purple{
+            border-top: 4px solid $purple-card-main;
+        }
+        &--pink{
+            border-top: 4px solid $pink-card-main;            
+        }
+        &--orange{
+            border-top: 4px solid $orange-card-main;            
+        }
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 2rem;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 30rem;
+
+        padding-bottom: 2rem;
+    }
+
+    &__gradient-decoration{
+        width: 29.5rem;
+        height: 2.5rem;
+        position: absolute;
+
+        &--purple{
+            background: $purple-card-main;
+            background: $purple-card-gradient-to-right;
+        }
+
+        &--pink{
+            background: $pink-card-main;
+            background: $pink-card-gradient-to-right;
+        }
+
+        &--orange{
+            background: $orange-card-main;
+            background: $orange-card-gradient-to-right;
+        }
+       
+        &--top{
+            border-radius: .7rem .7rem  0 0;
+            top: -2.5rem;
+            z-index: -1;
+        }
+        &--bottom{
+            border-radius: 0 0 .7rem .7rem;
+            height: 3.8rem;
+            bottom: -3.8rem;
+        }
+
+    }
+
+}
+  @media only screen and (max-width: $bp-huge){
+    .long-card{
+        &__wrapper{
+            grid-template-areas: 
+            "card-1 card-2"
+            "card-3 card-3";
+            grid-template-columns: repeat(2, 1fr);   
+        }
+        &__wrapper-2-cards{
+            grid-template-areas: unset; 
+        }
+    
+    }
+}    
+
+@media only screen and (max-width: $bp-largest){
+    .long-card{
+
+        &__fold{
+            
+            &--purple{
+                background-image: $purple-card-gradient-to-right;
+            }
+            &--pink{
+                background-image: $pink-card-gradient-to-right;
+            }
+            &--orange{
+                background-image: $orange-card-gradient-to-right;
+            }
+        }
+    }
+}    
+
+@media only screen and (max-width: $bp-medium){
+    .long-card{
+        &__wrapper{
+            grid-template-areas: 
+            "card-1"
+            "card-2"
+            "card-3";
+            grid-template-columns: 1fr;   
+        }
+        &__wrapper-2-cards{
+            grid-template-areas: unset; 
+        }
+    
+    }
+}   
+
+@media only screen and (max-width: $bp-small){
+    .long-card{
+        width: 90%;
+        border-radius: 0;
+
+        &__gradient-decoration{
+            display: none;
+        }
+
+        &__fold{
+            width: 100%;
+        }
+    }
+}   
+
+//This is a min width because the shadow needs to disapear when big
+@media only screen and (min-width: $bp-largest){
+    .long-card{
+        &__fold {         
+            box-shadow: none !important;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.header-main{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: minmax(20px, max-content) 1fr minmax(20px, max-content);
+    
+    
+    justify-items: center;
+    align-items: center;
+
+    &__dots{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .overflow-padding{
+        padding: 5rem;
+        width: 100%;
+    }
+}

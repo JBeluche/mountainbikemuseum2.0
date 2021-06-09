@@ -1,0 +1,19 @@
+.tree-illustration{
+
+    &__section{
+        background-color: $tree-brown;
+        position: relative;
+        text-align: center;
+        padding-top: 10rem;
+    }
+
+    &__text-wrapper{
+        z-index: 1;
+        padding: 0 10rem;
+    }
+
+    &__illustration-image{
+        width: 100%;
+        display: block;
+    }
+}

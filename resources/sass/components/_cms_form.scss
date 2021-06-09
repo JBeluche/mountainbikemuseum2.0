@@ -1,0 +1,12 @@
+
+
+.simple_input{
+    border: 1px solid $admin-grey;
+    padding: 1rem 0;
+    color: $house-dark;
+    text-align: center;
+
+    &::placeholder {
+        color: $house-dark;
+    }
+}

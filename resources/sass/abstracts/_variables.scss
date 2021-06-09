@@ -1,0 +1,78 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+
+$house-light: #EEEEEE;
+$house-dark: #383838;
+$light: #fff;
+
+$main-purple: #7F1399;
+$deep-purple: #3E066C;
+$soft-purple: #91399D;
+
+$main-pink: #FF006E;
+$seconday-pink: #F72680;
+$main-blue: #06B3F7;
+$secondary-blue: #147ED9;
+$thirdiary-blue: #0F3342;
+$light-blue: #00EFFC;
+$sky-blue: #76C0D8;
+$tree-brown: #372632;
+
+$admin-light: #F2ECE5;
+$admin-grey: #344151;
+$admin-beige: #D0AD7A;
+$admin-dark: #383838;
+
+//Base
+$color-info: #4bb1cf;
+$color-danger: #ED4F32;
+$color-primary: #288feb;
+$color-success: #15CD72;
+$color-warning: #EDE04D;
+$color-muted: #ECECEC;
+
+$color-info: #4bb1cf;
+$color-danger-light: #ff4444;
+$color-danger-dark: #CC0000;
+$color-primary: #288feb;
+$color-success: #15CD72;
+$color-warning: #EDE04D;
+$color-muted: #ECECEC;
+
+
+
+
+//Card colors
+$purple-card-main:  #5A1E80;
+$purple-card-gradient-to-right: linear-gradient(90deg, rgba(90,30,128,1) 0%, rgba(59,49,197,1) 47%, rgba(163,84,141,1) 100%);
+$purple-card-gradient-to-bottom-right: linear-gradient(175deg, rgba(90,30,128,1) 0%, rgba(59,49,197,1) 35%, rgba(163,84,141,1) 100%);
+
+$pink-card-main: rgb(253,23,145);
+$pink-card-gradient-to-right:  linear-gradient(90deg, rgba(253,23,145,1) 0%, rgba(193,43,151,1) 35%, rgba(145,57,157,1) 100%);
+$pink-card-gradient-to-bottom-right:   linear-gradient(175deg, rgba(253,23,145,1) 0%, rgba(193,43,151,1) 35%, rgba(145,57,157,1) 100%);
+
+$orange-card-main: rgb(255,192,16);
+$orange-card-gradient-to-right:  linear-gradient(90deg, rgba(255,192,16,1) 0%, rgba(255,109,0,1) 100%);
+$orange-card-gradient-to-bottom-right: linear-gradient(175deg, rgba(255,192,16,1) 0%, rgba(255,109,0,1) 100%);
+
+;
+
+//GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+
+//Media Queries
+$bp-huge: 93.75em; /// 1500px devide by 16 to get rem
+$bp-largest: 80em; /// 1280px devide by 16 to get rem
+$bp-large: 62.62em; /// 1050px
+$bp-medium: 50em; /// 800px
+$bp-small: 37.5em; /// 600px

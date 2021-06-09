@@ -1,0 +1,81 @@
+.fiets-reserveren{
+
+    &__section{
+        background-image: url(../img/reserveren.jpg);
+        width: 100%;
+        background-position: center;
+        padding: 15rem 0;
+        padding-bottom: 30rem;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: max-content;
+        grid-row-gap: 5rem;
+        align-items: center;
+        justify-items: center;
+    }
+
+    &__heading-line{
+        border: none;
+        width: 30rem;
+        border-top: 1rem solid $secondary-blue;
+        text-align: center;
+    }
+
+    &__card-intro{
+        background-color: rgba($house-dark, $alpha: .9);
+        position: relative;
+        padding: 7.5rem 15rem;
+        overflow: hidden;
+        width: 60%;
+    }
+
+    &__retro-bar-card{
+        height: 110%;
+        left: 0;
+        top: -5%;
+        position: absolute;
+    }
+    &__intro-text{
+
+        &--price{
+            text-align: center;
+        }
+    }
+
+    &__form-title{
+        padding: 5rem;
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (max-width: $bp-large){
+    .fiets-reserveren{        
+        &__card-intro{
+            padding: 6.5rem 10rem;
+            padding-right: 5rem;
+            overflow: hidden;
+            width: 80%;    
+        }
+        &__form{
+            padding: 0 20rem;
+        }
+        &__section{
+            padding-top: 5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: $bp-small){
+    .fiets-reserveren{        
+        &__card-intro{
+            width: 100%;
+            padding: 6.5rem 3rem;
+        }
+
+        &__retro-bar-card{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.two-halfs{
+
+    &__header{
+        width: 100%;
+        height: 100vh;
+        background-color: $house-dark;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25% 75%;
+    }
+    &__header-content {
+        align-self: center;
+        justify-self: right;
+        display: -webkit-box;
+        display: flex;
+        justify-items: center;
+        width: 90%;
+        border-left: 
+        #FF006E solid 1rem;
+    }
+    &__header-image{
+        grid-column: 1 / 2;
+        grid-row:   1 / 3;                
+        background-image: url(../img/vriend.jpg);
+        height: 100vh;
+        width: auto;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+    &__header-title{
+        align-self: end;
+        padding-left: 10rem;
+    }
+
+    &__header-text{
+        padding: 5rem;
+    }
+}
+
+@media only screen and (max-width: $bp-large){
+    .two-halfs{
+
+        &__header{
+            grid-template-columns: 1fr;
+            grid-template-rows: 60% 40%;
+            grid-row-gap: 0;
+            height: auto;
+        }
+        &__header-image{
+            grid-row:   1 / 2;
+            height: 75vh;
+        }
+        &__header-title{
+            grid-row:   2 / 3;
+            grid-column:   1 / 2;
+            align-self: start;
+            padding-left: 10rem;
+            padding-top: 3rem;
+        }
+    
+        &__header-content{
+            grid-row:   2 / 3;
+            grid-column:   1 / 2;
+            padding: 5rem;
+            padding-top: 6rem;
+            border-left: none;
+        }
+    }
+}
+@media only screen and (max-width: $bp-small){
+    .two-halfs{
+    &__header-content{
+        padding: 2rem;
+        padding-top: 10rem;
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+    }
+    &__header-title{
+        padding: 0;
+        padding-top: 5rem;
+        justify-self: center;
+    }
+}
+}

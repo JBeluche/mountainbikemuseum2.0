@@ -1,0 +1,85 @@
+.checkout{
+
+  &__login-form{
+    min-width: 25rem;
+  }
+
+  &__bottom-container{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  &__bottom-link{
+    color: $main-blue;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  &__bottom-question{
+    text-align: center;
+  }
+  
+}
+
+.payment-options{
+
+  &__button-wrapper{
+    
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 5rem;
+
+  }
+
+  &__buttons{
+      & button{
+        background-color: $house-light;
+        width: 21.5rem;
+        height: 7rem;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+
+.checkout-register {
+  &__section {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/biker-mountain.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10rem;
+    padding-top: 15rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: $bp-medium){
+.checkout-register {
+  &__section {
+    padding: 10rem 2rem;
+
+    & h1{
+      font-size: 5.2rem !important;
+    }
+  }
+}
+}
+ 
+
+

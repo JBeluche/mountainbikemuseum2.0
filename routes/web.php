@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CMSCreatingMountainsController;
+use App\Http\Controllers\NavbarItemController;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +20,12 @@ use Illuminate\Support\Facades\Route;
 
 
 //Dashboard CMS Creating Mountains
-Route::get('CMS_CreatingMountains', 'App\Http\Controllers\CMSCreatingMountainsController@index');
+Route::get('CMS_CreatingMountains', [CMSCreatingMountainsController::class, 'index']);
 //Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
+
+Route::resource('pages', PagesController::class);
+Route::resource('navbaritem', NavbarItemController::class);
 
 /*
 //Pages management

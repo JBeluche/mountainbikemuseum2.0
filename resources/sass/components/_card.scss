@@ -1,0 +1,94 @@
+
+
+
+.card-1{
+
+    width: 80rem;
+    background-color: $house-light;
+    text-align: center;
+    margin-top: 10rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+
+
+
+
+    &__offset{
+        position: relative;
+        margin-top: -20rem;
+
+    }
+
+    &__retro-border{
+        grid-row: 1 / -1;
+        background-image: url(/img/retro-bar-3.svg);
+        width: 4.5rem;
+
+        &--left{
+            grid-column: 1 / 2;
+        }
+
+        &--right{
+            grid-column: 2 / 3;
+        }
+    }
+
+    
+    &__image{
+        max-width: 100%;
+    }
+    
+ 
+
+
+    &__text{
+        padding: 0 5rem;
+        max-width: 100%;
+    }
+
+    &__left{
+        left: 10%;
+        border-radius: 0 25px 25px 0;        
+        grid-template-columns: min-content 1fr;
+    }
+
+    &__right{
+        border-radius: 25px 0 0 25px;        
+        grid-template-columns: 1fr max-content;
+        align-self: flex-end;
+        margin-right: 10%;
+    }
+
+}
+.missie-visie{        
+    padding-bottom: 75rem;
+}
+
+@media only screen and (max-width: $bp-medium){
+    .card-1{
+        right: 0;
+        left: 0;
+        width: 100%;
+        margin: 0 0;
+        grid-template-columns: 100%;
+        border-radius: 0;
+
+        &__left{
+            margin-bottom: 50rem;
+        }
+        
+
+        p{
+            width: 100%;
+        }
+
+        &__retro-border{
+            display: none;
+        }
+    }
+
+    .missie-visie{        
+        padding-bottom: 0;
+    }
+}

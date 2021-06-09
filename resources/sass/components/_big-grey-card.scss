@@ -1,0 +1,310 @@
+.big-grey-card{
+
+    &__section{
+        width: 100%;
+        position: relative;
+
+        &--contact{
+            display: grid;
+            grid-auto-flow: row;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            grid-row-gap: 20rem;
+
+            padding: 15rem 0;
+            overflow: hidden;
+
+        }
+    }
+    &__list-item{
+        margin-left: 5rem;
+    }
+
+    &__background-image{
+        display:block;
+        width: 100%;
+        height: 1000px;
+        object-fit: cover;
+
+        &--contact{
+            display:block;
+            width: 100%;
+        }
+    }
+
+    &__background-wrapper{
+        height: 100%;
+        position: relative;
+
+        &--contact{
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    &__grey-area-fix{        
+        position: absolute;
+        padding: 9rem;     
+        padding-bottom: 11rem;       
+        background-color: rgba($house-dark, .95);      
+    }
+    &__contact-wrapper{
+        
+        position: relative;
+        padding: 4rem 2rem;
+        padding-bottom: 10rem;
+        display: grid;
+        grid-template-areas: 
+        'title title title'
+        'contact-1 contact-2 openinghours';
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+        justify-items: center;
+        line-height: 1.50;
+        font-size: 1.4rem;
+        width: 100%;
+        
+        overflow: hidden;
+    }
+    &__contact-header{
+        grid-area: title;
+        text-align: center;
+    }
+    &__contact-contact-1{
+        grid-area: contact-1;
+        padding-left: 2rem;
+        border-left: 2px $main-pink solid;
+    }
+    &__contact-contact-2{
+        grid-area: contact-2;
+        padding-left: 2rem;
+        border-left: 2px $main-pink solid;
+    }
+    &__contact-openinghours{
+        grid-area: openinghours;
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        grid-column-gap: 2rem;
+    }
+    &__contact-bottom-bar{
+        position: absolute;
+        bottom: 0;
+        width: 110%;
+        margin: 0 -10rem;
+    }
+
+
+    &__card-container{
+        margin-bottom: 10rem;
+        position: absolute;
+        top: 13rem;
+        width: 50%;
+           /*This puts the div in the center*/
+             left: 0; 
+             right: 0; 
+             margin-left: auto; 
+             margin-right: auto; 
+        z-index: 2;
+
+        &--contact{
+            top: 0;
+            width: 100%;
+        margin-bottom: 0;
+        position: relative;
+        }
+    }
+    &__card-image{
+        max-width:90%;
+
+        &--container{
+            width: 60%;
+            position: absolute;
+            right: -25rem;
+            margin-top: 5rem;
+            z-index: 1;
+        }
+    }
+
+    &__background-retro-bar{
+        width: 100%;
+        z-index: 1;
+        display: block;
+    }
+
+    &__quote{
+        position: absolute;
+        left: -20rem;
+        bottom: -30rem;
+        width: 70rem;
+    }
+    &__card-retro-bar{
+        width: 105%;
+        bottom: 0;
+        left: -1rem;
+        position: absolute;
+    }
+
+    &__card-map{
+        width: 100%; 
+        height: 45rem;;
+        display: block;   
+        background-image: url(../img/map.jpg);
+        background-size: cover;
+        background-position: center center;     
+        z-index: 2;
+    }
+    &__contact-form{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: $bp-huge){
+    .big-grey-card{
+
+        &__card-container{
+            width: 60%;
+
+            &--contact{
+                width: 100%;
+            }
+        }
+
+}
+}
+
+@media only screen and (max-width: $bp-large){
+    .big-grey-card{
+
+        &__contact-form-wrapper{
+            width: 100%;
+            background: rgb(238,238,238);
+            background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(238,238,238,1) 51%, rgba(56,56,56,1) 52%, rgba(56,56,56,1) 100%);
+
+        }
+
+        &__section{
+            background-color: $house-dark;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            &--contact{
+                display: block;
+            }
+        }
+        &__background-wrapper{
+            display: none;
+        }
+
+        &__card-container{
+            width: 100%;
+            top: 0;
+            padding-top: 8rem;
+            position: relative;
+            margin-bottom: 0;
+
+        }
+        &__grey-area-fix{    
+            position: relative;       
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: max-content;
+            grid-row-gap: 5rem;
+
+            align-items: center;
+            justify-items: center;
+        }
+
+        &__background-image{
+            display: none;
+        }
+        
+    &__contact-wrapper{
+        grid-template-areas: 
+        'title title title'
+        'contact-1 contact-2 openinghours';
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 0;
+    }
+
+        &__textfield-header{
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+            margin-bottom: 0;
+        }
+
+        &__textfield-text{
+            grid-column: 1 / 3;
+
+        }
+
+        &__card-image{
+    
+            &--container{
+                
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+
+                width: 80%;
+                position: static;
+                right: auto;
+                margin-top: 0;
+            }
+        }
+        
+        &__quote{
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            position: static;
+            left: auto;
+            bottom: auto;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: $bp-medium){
+    .big-grey-card{
+
+        &__card-image{
+    
+            &--container{
+                
+            grid-column: 1 / 3;
+            grid-row: 4 / 5;
+
+            }
+        }
+        &__quote{
+            grid-column: 1 / 3;
+        }
+
+        &__contact-wrapper{
+            padding: 5rem 2rem;
+            padding-bottom: 10rem;
+            grid-template-areas: 
+            'title'
+            'contact-1'
+            'contact-2' 
+            'openinghours';
+            grid-template-columns: 1fr;
+            grid-row-gap: 5rem;
+        }
+        &__contact-contact-2,
+        &__contact-contact-1{
+            padding-left: 0;
+            border-left: 0;
+            text-align: center;
+        }
+        &__contact-header{
+            margin-bottom: 0 !important;
+        }
+
+        &__centered-card{
+            margin-bottom: 0;
+        }
+
+}
+}

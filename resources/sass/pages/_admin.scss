@@ -1,0 +1,586 @@
+.admin {
+    &__section {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10rem 0;
+        background-image: url(/img/admin-background.jpg);
+        background-size: cover;
+    }
+
+    &__title {
+    }
+
+    &__tile-form {
+        display: grid;
+        padding: 4rem 5rem;
+        grid-row-gap: 2rem;
+        grid-column-gap: 5rem;
+        grid-auto-columns: 10rem;
+        grid-template-columns: repeat(4, 1fr);
+
+      /*  & :last-child {
+            grid-column: 1 / -1;
+        }*/
+
+        &--item{
+            display: grid;
+            grid-auto-flow: row;
+            grid-row-gap: 0.5rem;
+            background-color: white;
+            text-align: center;
+            padding: 1rem;
+            height: 10rem;
+
+            & h3{
+                align-self: center;
+            }
+        }
+    }
+
+    &__button,
+    &__green-button,
+    &__red-button,
+    &__yellow-button,
+    &__blue-button  {
+        padding: 2rem;
+        background-color: $color-success;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+       
+        text-decoration: none;
+        color: $house-light;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    &__green-button {
+        background-color: $color-success;
+    }
+
+    &__red-button {
+        background-color: $color-danger-dark;
+    }
+
+    &__yellow-button {
+        background-color: $color-warning;
+    }
+
+    &__blue-button {
+        background-color: $color-primary;
+    }
+
+    &__input {
+        border: 1px solid $admin-grey;
+        padding: 1rem 0;
+        color: $house-dark;
+        text-align: center;
+
+        &::placeholder {
+            color: $house-dark;
+        }
+    }
+
+    &__dashboard {
+        background-color: $admin-light;
+        border-radius: 4rem;
+        display: flex;
+        overflow: hidden;
+    }
+
+    &__navigation {
+        background-color: $admin-grey;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &--items {
+            display: block;
+            background-color: $admin-beige;
+            width: 100%;
+            text-decoration: none;
+            padding: 1.5rem 0;
+            color: $house-light;
+        }
+
+        &--logo {
+            display: block;
+            padding: 4rem 3rem;
+            padding-bottom: 0;
+        }
+
+        &--welcome {
+            padding: 4rem 0;
+            color: $house-light;
+        }
+    }
+
+    &__dashboards {
+        &--titles {
+        }
+        &--info {
+            padding: 0 5rem;
+        }
+    }
+
+    &__viewer {
+        width: 100rem;
+        height: 80vh;
+        overflow: scroll;
+        position: relative;
+        padding: 5rem 0;
+        text-align: center;
+    }
+
+    &__page {
+        &--container {
+            width: 100%;
+            padding: 15rem 10rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-row-gap: 2rem;
+            grid-column-gap: 4rem;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        &--item {
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            word-wrap: break-word;
+            position: relative;
+            width: 22rem;
+            height: 11rem;
+        }
+
+        &--delete-link {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            background-color: $color-danger;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &--edit-link {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            background-color: $color-primary;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--show-title {
+        }
+
+        &--show-lang {
+        }
+        &--show-info {
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__page-create {
+        &--container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5rem 0;
+        }
+        &--pagename{
+            &-item-1{
+                grid-column: 1 /2;
+                grid-row: 1 / 2;
+                align-self: end;
+            }
+            &-item-2{
+                grid-column: 2 / 3;
+                align-self: end;
+                grid-row: 1 / 2;
+            }
+            &-item-3{
+                grid-column: 3 / 4;
+                align-self: end;
+                grid-row: 1 / 2;
+            }
+            &-item-4{
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+            &-item-5{
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+            &-item-6{
+                grid-column: 3 /4;
+                grid-row: 2 / 3;
+            }
+            &-containers {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-row-gap: 2rem;
+                grid-column-gap: 2rem;
+            }
+    }
+
+        &--link-containers {
+            display: grid;
+        }
+    }
+
+    &__dropdowns{
+        padding: 1rem 0;
+    }
+
+    //////
+    // Text Data Page
+    //////
+
+    &__textdatas {
+        &--container {
+            width: 100%;
+            padding: 15rem 7rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 2rem;
+            grid-column-gap: 4rem;
+        }
+
+        &--filter-container {
+            padding: 2rem;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        &--filter-button {
+            background-color: $color-success;
+            padding: 2rem 5rem;
+            width: 10rem;
+            cursor: pointer;
+        }
+
+        &--item {
+            grid-template-columns: 1fr;
+            grid-row-gap: 2rem;
+
+            display: grid;
+            flex-direction: column;
+            background-color: white;
+            padding: 5rem 3rem;
+            word-wrap: break-word;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            align-content: center;
+
+            &--textarea {
+                //background-color: $admin-grey;
+                max-width: 100%;
+                min-width: 100%;
+                height: 10.75rem;
+                padding: 2rem;
+                color: $house-dark;
+                border: 1px solid $admin-grey;
+            }
+        }
+
+        &--name {
+            border: 1px solid $admin-grey;
+            // background-color: $admin-grey;
+            padding: 1rem 0;
+            color: $house-dark;
+            text-align: center;
+        }
+
+        &--delete {
+            background-color: $color-danger-dark;
+            border-radius: 2rem;
+            width: 80%;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: $house-light;
+        }
+
+        &--save {
+            border-radius: 2rem;
+            background-color: $color-success;
+            padding: 1.5rem;
+            width: 80%;
+            cursor: pointer;
+        }
+
+        //For create page
+        &-create {
+            &--container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &--form {
+                display: grid;
+                grid-row-gap: 2rem;
+                width: 50%;
+                justify-content: center;
+            }
+            &--item{
+                display: grid;
+                grid-row-gap: 1rem;
+                grid-auto-flow: row;
+            }
+        }
+    }
+
+    &__modules {
+        &--container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &--aanpasbaar-container {
+            width: 80%;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column-gap: 5rem;
+            grid-row-gap: 2rem;
+            padding: 5rem 0;
+        }
+
+        &--aanmaak-formulier{
+            display: grid;
+            grid-auto-flow: column;
+
+            &--item-3{
+                width: 100%;
+
+            }
+
+        }
+
+        &--item {
+            padding: 4rem;
+            background-color: white;
+        }
+
+        &-edit {
+            &--container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &--forms {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+
+                & select,
+                & input{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    &__component{
+        &--show{
+
+            &-container{
+                display: grid;
+                grid-row-gap: 3rem;
+                padding: 5rem 0;
+            }
+
+            &-item{
+                display: grid;
+                grid-template-columns: 1fr max-content max-content max-content max-content;
+                background-color: white;
+                grid-auto-flow: column;
+            }
+
+            &-save,
+            &-delete,
+            &-edit{
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            &-name{
+                grid-column: 1 / 2;
+                align-self: center;
+                justify-self: center;
+            }
+            &-name-2{
+                grid-column: 1 / 2;
+                justify-self: center;
+                width: 100%;
+                border: 1px solid $house-dark;
+                border-left: none;
+                border-right: none;
+            }
+            &-index{
+                grid-column: 2 / 3;
+            }
+            &-index-2{
+                grid-column: 3 / 4;
+                justify-self: center;
+                align-self: center;
+                text-align: center;
+                border: 1px solid $house-dark;
+                border-left: none;
+                width: 100%;
+                height: 100%;
+            }
+            &-save{
+                background-color: $color-success;
+                grid-column: 3 / 4;
+                padding: 1rem;
+                cursor: pointer;
+            }
+            &-save-2{
+                background-color: $color-success;
+                grid-column: 4 / 5;
+                padding: 1rem;
+            }
+            &-edit{
+                background-color: $color-primary;
+                padding: 1rem;
+                grid-column: 4 / 5;
+            }
+            &-module{
+                padding: 1rem;
+                grid-column: 2 / 3;
+                border: 1px solid $house-dark;
+            }
+            &-delete{
+                grid-column: 5 / 6;
+                background-color: $color-danger;
+                padding: 1rem;
+
+                & img{
+                    width: 2rem;
+                }
+            }
+
+            &-span-1{
+                background-color: $admin-light;
+                grid-column: 1 / 2;
+                padding: 1rem;
+            }
+            &-span-2{
+                background-color: $admin-light;
+                padding: 1rem;
+                grid-column: 2 / 3;
+            }
+            &-span-3{
+                background-color: $admin-light;
+                padding: 1rem;
+                grid-column: 3 / 4;
+            }
+            &-span-4{
+                padding: 1rem;
+                background-color: $admin-light;
+                grid-column: 4 / 5;
+            }
+        }
+    }
+
+    &__imagedata{
+
+        &--container{
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row-gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+        }
+
+        &--item{
+            width: 20rem;
+            height: 15rem;
+            background-color: white;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            align-items: center;
+        }
+
+        &--delete{
+            background-color: $color-danger;
+            padding: 2rem;
+            text-decoration: none;
+            width: 100%;
+            line-height: 2.1;
+        }
+
+        &--file-form{
+            display: grid;
+            width: 70%;
+            grid-row-gap: 3rem;
+            padding: 5rem;
+            
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+
+            &--wrapper{
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+    }
+
+    &__fileupload{
+        width: 100%;
+    }
+}
+
+.image-banner{
+    
+}
+
+
+@media only screen and (max-width: $bp-medium){
+    .image-banner{
+        width: 100%;
+        padding: 10rem 0 !important;
+    }
+    
+    }

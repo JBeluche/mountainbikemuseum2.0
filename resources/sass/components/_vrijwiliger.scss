@@ -1,0 +1,36 @@
+.vrijwiliger{
+
+    width: 80%;
+    margin-bottom: 20rem;
+
+    &__card-wrapper{
+        
+        align-items: flex-start !important;
+        padding: 10rem;
+        text-align: left;
+        & ul {
+           
+        list-style-type: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: $bp-medium){
+    .vrijwiliger{
+        &__card-wrapper{
+            padding: 5rem 3rem;
+        }
+    }
+}
+
+@media only screen and (max-width: $bp-medium){
+    .vrijwiliger{
+        width: 90%;
+        padding: 7.5rem 5rem;
+        padding-left: 4rem;
+        &__card-wrapper{
+            padding: 0;
+        }
+    }
+}
