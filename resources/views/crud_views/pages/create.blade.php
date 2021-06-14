@@ -33,42 +33,14 @@
                 <select class="admin__page-create--pagename-item-4 admin__dropdowns" name="nav_link_id_nl">
                     <option value="0" selected>Alleen staande link</option>
 
-                        @foreach ($navlinks as $navlink)
-                            @if ($navlink->lang == 'nl')
-                                <option value="{{$navlink->id}}">{{$navlink->name}} ({{$navlink->lang}})</option>
-                            @endif
+                        @foreach ($navbaritems as $navbaritem)
+                            <option value="{{$navbaritem->id}}">{{$navbaritem->name_dutch}}</option>
                             
                         @endforeach
                     
                 </select>
 
-                <label class="admin__page-create--pagename-item-2">Navigatie Link Duits<span class="required"></span></label>
-                  
-                <select class="admin__page-create--pagename-item-5 admin__dropdowns" name="nav_link_id_de">
-                    <option value="0" selected>Alleen staande link</option>
-
-                        @foreach ($navlinks as $navlink)
-                            @if ($navlink->lang == 'de')
-                                <option value="{{$navlink->id}}">{{$navlink->name}} ({{$navlink->lang}})</option>
-                            @endif
-                            
-                        @endforeach
-                    
-                </select>
-
-                <label class="admin__page-create--pagename-item-3">Navigatie Link Engels<span class="required"></span></label>
-                  
-                <select class="admin__page-create--pagename-item-6 admin__dropdowns" name="nav_link_id_en">
-                    <option value="0" selected>Alleen staande link</option>
-
-                        @foreach ($navlinks as $navlink)
-                            @if ($navlink->lang == 'en')
-                                <option value="{{$navlink->id}}">{{$navlink->name}} ({{$navlink->lang}})</option>
-                            @endif
-                            
-                        @endforeach
-                    
-                </select>
+    
 
 
             </div>

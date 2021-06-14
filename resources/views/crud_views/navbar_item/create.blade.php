@@ -13,40 +13,59 @@
 
     <div>
 
-        <form class="admin__page-create--container" method="POST" action="/navbaritem/create">
+        <form class="admin__page-create--container" method="POST" action="/navbaritem">
             @csrf
 
             <div class="admin__page-create--pagename-containers">
                 <label class="admin__page-create--pagename-item-1">Pagina naam Nederlands:<span
                         class="required"></span></label>
-                <input onkeyup="this.value = this.value.toUpperCase();"
-                    class="admin__page-create--pagename-item-4 field-divided admin__input" type="text" name="name_nl"
+                <input required onkeyup="this.value = this.value.toUpperCase();"
+                    class="admin__page-create--pagename-item-4 field-divided admin__input" type="text" name="name_dutch"
                     placeholder="Naam Nederlands" />
                 <label class="admin__page-create--pagename-item-2">Pagina naam Duits:<span class="required"></span></label>
-                <input onkeyup="this.value = this.value.toUpperCase();"
-                    class="admin__page-create--pagename-item-5 field-divided admin__input" type="text" name="name_de"
+                <input required onkeyup="this.value = this.value.toUpperCase();"
+                    class="admin__page-create--pagename-item-5 field-divided admin__input" type="text" name="name_german"
                     placeholder="Naam Duits" />
                 <label class="admin__page-create--pagename-item-3">Pagina naam Engels:<span class="required"></span></label>
-                <input onkeyup="this.value = this.value.toUpperCase();"
-                    class="admin__page-create--pagename-item-6 field-divided admin__input" type="text" name="name_en"
+                <input required onkeyup="this.value = this.value.toUpperCase();"
+                    class="admin__page-create--pagename-item-6 field-divided admin__input" type="text" name="name_english"
                     placeholder="Naam Engels" />
             </div>
 
-            <div>
+            <div class="u-margin-bottom-medium">
 
-                @foreach($navbaritems as $navbaritem)
-                    Bitches!
-                @endforeach
-
-                <label class="admin__page-create--pagename-item-3">Index:<span class="required"></span></label>
-                <input onkeyup="this.value = this.value.toUpperCase();"
-                    class="admin__page-create--pagename-item-6 field-divided admin__input" type="text" name="name_en"
-                    placeholder="Index" />
+                <label class="admin__page-create--pagename-item-3">Index:<span class="required"></span></label> <br><br>
+                <input required class="admin__page-create--pagename-item-6 field-divided admin__input" type="number"
+                    name="index" placeholder="Index" />
             </div>
 
             <input class="admin__green-button" type="submit" value="Maak dropdown item aan" />
 
-        </form>
+
+
+    <h2>Voeg paginas aan deze dropdown</h2>
+    <p>Als ze bij een ander drop down waren dan zullen ze daar blijven</p>
+
+
+        <div id="newlink">
+           
+        </div>
+       
+        <p id="addnew">
+            <a href="javascript:new_link()">Add New </a>
+        </p>
+
+    <!-- Template -->
+    <div id="newlinktpl" style="display:none">
+            @foreach ($pages as $page)
+                <option value="{{$page->id}}">{{$page->name_dutch}}</option>
+            @endforeach
+
+       
     </div>
+
+
+</form>
+</div>
 
 @endsection

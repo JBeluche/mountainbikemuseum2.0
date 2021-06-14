@@ -31,4 +31,53 @@
 
 </section>
 
+
+<script>
+
+/*  
+    |-----------------------------------------------|
+    | This is for the button are you sure effect    | 
+    |-----------------------------------------------|   
+*/
+        ;(function($){
+        
+        function clickHandler() {
+            $(this).parents('.buton-cover').toggleClass('is_active');
+        }
+
+        $('.btn').on('click', clickHandler);
+
+        }(jQuery));
+
+
+/*  
+    |-----------------------------------------------|
+    | This is for adding an input field             | 
+    |-----------------------------------------------|   
+*/
+        var ct = 1;
+
+        function new_link()
+        {
+            ct++;
+            var div1 = document.createElement('div');
+            var htmlid = '<select name="page_to_add_' + ct + '" id=" ' + ct + '">'
+            
+            div1.id = ct;
+            // Create delete link
+            var delLink = '<div style="text-align:right;margin-right:65px"><a href="javascript:delIt('+ ct +')">Del</a></div>';
+            div1.innerHTML = htmlid + document.getElementById('newlinktpl').innerHTML + "</select>" + delLink;
+            document.getElementById('newlink').appendChild(div1);
+        }
+        // Delete
+        function delIt(eleId)
+        {
+            d = document;
+            var ele = d.getElementById(eleId);
+            var parentEle = d.getElementById('newlink');
+            parentEle.removeChild(ele);
+        }
+
+</script>
+
 @endsection
