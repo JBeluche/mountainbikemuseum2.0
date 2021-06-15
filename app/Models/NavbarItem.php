@@ -11,4 +11,5 @@ class NavbarItem extends Model
 
 
     protected $guarded = [];
+
 }

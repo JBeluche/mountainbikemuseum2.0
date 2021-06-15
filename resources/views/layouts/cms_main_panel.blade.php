@@ -61,11 +61,12 @@
         {
             ct++;
             var div1 = document.createElement('div');
-            var htmlid = '<select name="page_to_add_' + ct + '" id=" ' + ct + '">'
+            div1.className = "cms_add-page-container";
+            var htmlid = '<select class="cms-dropdown" name="page_to_add_' + ct + '" id=" ' + ct + '">'
             
             div1.id = ct;
             // Create delete link
-            var delLink = '<div style="text-align:right;margin-right:65px"><a href="javascript:delIt('+ ct +')">Del</a></div>';
+            var delLink = '<div class="paragraph-big__light cms__delete"><a href="javascript:delIt('+ ct +')">Verwijderen</a></div>';
             div1.innerHTML = htmlid + document.getElementById('newlinktpl').innerHTML + "</select>" + delLink;
             document.getElementById('newlink').appendChild(div1);
         }

@@ -1,0 +1,22 @@
+.cms_add-page-container{
+    display: flex;
+
+}
+
+.cms-dropdown{
+    border:none;
+    width: 100%;
+    //background-color: $color-info;
+    padding: 1rem 1rem;
+}
+
+.cms__delete{
+    background-color: $color-danger;
+    padding: 1rem 2rem;
+    text-decoration: none; 
+
+    & a{
+        color: #FFFFFF;
+    text-decoration: none;
+    }
+}

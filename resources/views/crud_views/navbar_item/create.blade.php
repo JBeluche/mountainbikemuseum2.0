@@ -4,6 +4,9 @@
 
 @section('content')
 
+    {{--BACK BUTTON--}}
+    <a class="cms_back-div" href="/navbaritem"> <img src="/img/svg/back-arrow.svg" alt=""> TERUG </a>
+
     <h1 class="admin__dashboards--titles header-main__admin">Dropdown Navigatie Item</h1>
 
     <p class="paragraph-big__dark admin__dashboards--info">Hieronder maak je een dropdown voor de navigatie balk!</p>
@@ -39,31 +42,30 @@
                     name="index" placeholder="Index" />
             </div>
 
-            <input class="admin__green-button" type="submit" value="Maak dropdown item aan" />
 
 
 
-    <h2>Voeg paginas aan deze dropdown</h2>
-    <p>Als ze bij een ander drop down waren dan zullen ze daar blijven</p>
+    <h2 class="u-margin-bottom-small"><b>Voeg paginas aan deze dropdown</b></h2>
+    <p class="u-margin-bottom-medium paragraph-big__dark admin__dashboards--info">Als ze bij een ander drop down waren dan zullen ze daar blijven</p>
 
 
-        <div id="newlink">
-           
+        <div id="newlink" class="u-margin-bottom-medium">
         </div>
        
-        <p id="addnew">
-            <a href="javascript:new_link()">Add New </a>
+        <p id="addnew" class="u-margin-bottom-medium">
+            <a  class="admin__component--show-edit paragraph-big__light" href="javascript:new_link()">New pagina kopelen</a>
         </p>
 
     <!-- Template -->
     <div id="newlinktpl" style="display:none">
             @foreach ($pages as $page)
-                <option value="{{$page->id}}">{{$page->name_dutch}}</option>
+                <option value="{{$page->id}}">{{strtoupper($page->name_dutch)}}</option>
             @endforeach
 
        
     </div>
 
+    <input class="admin__green-button" type="submit" value="Maak dropdown aan" />
 
 </form>
 </div>

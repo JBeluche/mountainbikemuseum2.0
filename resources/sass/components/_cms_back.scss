@@ -1,0 +1,12 @@
+.cms_back-div{
+    display: flex;
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        padding: 2rem;
+    }
+}

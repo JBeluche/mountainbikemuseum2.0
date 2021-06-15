@@ -21,13 +21,19 @@
             <div class="admin__page--item">
 
                 <div class="admin__page--show-info">
-                    <h3 class="admin__page--show-title">{{ $navbaritem->name_dutch }}</h3>
+                  <div class="cms-navlink">
+                    <h3 class="header-second__admin admin__page--show-title cms-navlink__1">{{ $navbaritem->name_dutch }}</h3>
+                    <h3 class="header-third__admin admin__page--show-title cms-navlink__2">@if($navbaritem->is_dropdown === 1)Dropdown @else Single @endif</h3>
+                    <h3 class="header-third__admin admin__page--show-title cms-navlink__3">{{ $navbaritem->index }}</h3>
+                  </div>
+
                 </div>
 
                 <a class="admin__page--edit-link paragraph-big__light" href="/navbaritem/{{$navbaritem->id}}/edit">Edit</a>
 
                 <div class="pen-wrapper">
-
+                  @if ($navbaritem->is_dropdown === 1)
+                      
                     <div class="pen-wrapper__inner">
                       
                       <div class="buton-cover button-slide-up">
@@ -43,6 +49,9 @@
                       </div>
                   
                     </div>
+
+                  @endif
+
                   </div>
 
 
